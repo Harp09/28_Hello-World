@@ -1,0 +1,9 @@
+<body>
+    <div class="container">
+        <h1>Contador: {{ counter }}</h1>
+        <div>
+          <button type="button" (click)="increase()">INCREMENTAR</button>
+          <button (click)="decrease()" [disabled]="counter === 0">DECREMENTAR</button>
+        </div>
+      </div>
+</body>
